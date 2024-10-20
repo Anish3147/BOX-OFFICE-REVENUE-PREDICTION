@@ -48,22 +48,27 @@ The Box Office Revenue Prediction System aims to help producers and film studios
    git clone https://github.com/yourusername/box-office-revenue-prediction.git
    cd box-office-revenue-prediction
 2. **Create a Virtual Environment (Optional but recommended)**:
+    ```bash
     python -m venv venv
     source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-3. **Install Dependencies**:
+4. **Install Dependencies**:
+    ```bash
     pip install -r requirements.txt
 ## Usage
 1. **Data Preprocessing**:
     Place your dataset in the data/ directory.
     Run the preprocessing script to clean and prepare the data.
+    ```bash
        python preprocess_data.py
 
-2. **Training the Model**:
+3. **Training the Model**:
     Train the model using the training script.
+    ```bash
    python train_model.py
    
-3. **Making Predictions**:
+5. **Making Predictions**:
     Once the model is trained, use it to make predictions on new data.
+    ```bash
     python predict.py --input new_movie_data.csv
 4.**Jupyter Notebooks**:
     You can explore the Jupyter notebooks in the notebooks/ directory to understand the development and testing process.
@@ -73,18 +78,18 @@ The system uses a dataset containing historical movie data with features like bu
 
 ## Model Training
 The system supports multiple machine learning algorithms:
-  .Linear Regression
-  .Decision Trees
-  .Random Forest
-  .Gradient Boosting
-  .Neural Networks (optional)
+  . Linear Regression
+  . Decision Trees
+  . Random Forest
+  . Gradient Boosting
+  . Neural Networks (optional)
 You can configure the model parameters in the config.py file and run the training script.
 
 ## Evaluation
 The model's performance is evaluated using metrics such as:
-    .Mean Absolute Error (MAE)
-    .Mean Squared Error (MSE)
-    .Root Mean Squared Error (RMSE)
+    . Mean Absolute Error (MAE)
+    . Mean Squared Error (MSE)
+    . Root Mean Squared Error (RMSE)
 Evaluation results are displayed after training, and you can visualize the results using the provided plotting functions.
 
 ## Contributing
@@ -100,5 +105,5 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Acknowledgements
-Thanks to all the contributors of open-source libraries used in this project.
-Inspiration from similar machine learning projects.
+    Thanks to all the contributors of open-source libraries used in this project.
+    Inspiration from similar machine learning projects.
